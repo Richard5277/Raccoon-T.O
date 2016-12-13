@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="63" height="29" tilewidth="32" tileheight="32" nextobjectid="364">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32" tilecount="72" columns="12">
+  <image source="grass.png" width="384" height="192"/>
+ </tileset>
+ <tileset firstgid="73" name="animation" tilewidth="32" tileheight="32" tilecount="48" columns="8">
+  <image source="animation.jpeg" width="259" height="194"/>
+  <tile id="44">
+   <animation>
+    <frame tileid="44" duration="100"/>
+    <frame tileid="45" duration="100"/>
+    <frame tileid="46" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="121" name="coin" tilewidth="32" tileheight="32" tilecount="6" columns="6">
+  <image source="coin.png" width="192" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="63" height="29" offsetx="78" offsety="-19">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,5,6,0,0,0,5,6,0,0,0,0,0,0,0,0,17,18,0,0,0,33,33,33,33,33,0,0,0,0,0,0,0,0,33,33,33,33,33,33,0,0,
+7,8,9,10,7,8,9,10,7,8,9,10,0,0,0,33,34,0,0,0,17,18,17,18,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+19,20,21,22,19,20,21,22,19,20,21,22,0,0,0,45,46,0,0,0,5,6,5,6,0,0,0,0,0,0,0,0,5,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,22,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,17,18,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,34,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,0,0,0,0,0,0,0,0,0,21,22,0,0,21,22,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,0,0,0,0,0,0,0,0,0,33,34,0,0,33,34,0,0,0,0,0,0,0,0,0,
+113,113,113,113,0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,22,0,0,0,0,0,0,21,22,22,22,22,22,0,0,0,
+0,0,0,113,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,34,0,0,0,0,0,0,0,34,0,0,0,0,0,0,0,
+0,0,0,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,22,0,0,0,0,0,0,0,0,0,0,21,0,0,0,0,0,0,
+0,0,0,113,0,0,0,0,0,0,0,0,33,15,0,0,0,15,15,33,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33,34,0,0,0,0,0,0,0,0,0,0,33,34,0,0,0,0,0,
+0,0,0,113,0,0,0,0,0,0,34,33,33,33,33,33,33,33,33,33,34,0,0,0,55,8,0,0,0,3,4,0,0,0,0,3,4,0,0,0,0,22,21,22,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,22,0,0,0,
+0,0,0,0,0,0,0,45,45,45,45,0,0,0,45,45,0,0,0,45,46,0,0,0,8,68,0,0,0,15,16,0,0,0,0,15,16,0,0,0,0,22,33,34,0,0,0,0,0,0,0,0,58,59,0,0,0,0,33,34,33,33,34,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,71,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,0,0,0,0,0,0,0,0,0,
+113,113,113,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,0,0,0,0,70,71,0,0,0,0,0,0,0,0,0,
+0,113,113,113,0,0,0,33,33,0,0,0,0,0,0,0,33,0,33,0,0,33,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,0,0,0,0,0,58,59,0,0,0,0,0,113,113,113,113,
+0,0,0,113,0,0,0,0,33,33,0,0,0,0,0,0,33,0,33,0,0,33,0,0,0,0,113,0,0,0,0,0,0,0,0,0,3,3,3,3,4,3,4,0,0,0,58,0,0,0,0,0,58,59,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,33,33,33,33,0,0,0,33,0,33,0,33,33,0,0,0,0,113,113,0,0,0,0,0,0,0,0,15,15,0,0,0,15,16,0,0,0,58,0,0,0,0,0,70,71,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,33,33,33,33,33,33,33,33,33,0,0,0,0,0,113,114,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,59,0,0,0,0,58,59,0,0,0,113,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,114,115,113,113,114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,71,0,0,0,0,70,71,0,0,0,113,113,113,113,113,113,
+7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113,113,113,113,
+19,0,0,0,0,0,0,0,113,114,115,0,0,0,0,0,0,113,114,115,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,
+19,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,
+19,20,0,0,0,21,22,0,0,0,0,0,0,0,21,22,0,0,0,0,0,21,22,0,0,0,0,33,0,0,0,0,0,33,34,0,0,0,9,0,0,0,22,0,0,0,21,22,0,0,0,0,21,22,0,0,0,0,0,0,7,8,8,
+19,20,0,0,0,33,34,0,0,0,0,0,0,0,33,34,0,0,0,0,0,33,34,0,0,0,0,33,0,0,33,0,0,33,0,0,0,0,21,0,0,0,34,0,0,0,33,34,0,9,9,0,33,34,0,8,9,10,0,0,7,8,20,
+19,20,0,0,0,45,46,0,0,0,0,0,0,0,45,46,0,0,0,0,0,45,46,0,0,0,0,33,0,0,33,0,0,33,0,0,0,20,21,0,34,45,46,0,0,0,45,46,0,0,0,0,45,46,0,20,21,22,0,33,7,7,8,
+19,20,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,19,19,20
+</data>
+ </layer>
+ <objectgroup name="Object Layer 1" offsetx="78.7879" offsety="-18.1818">
+  <object id="5" name="coin" gid="34" x="704" y="287.667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="9" name="coin" gid="34" x="319.333" y="63" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="10" name="coin" gid="34" x="513" y="64" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="11" name="coin" gid="34" x="768" y="127" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="12" name="coin" gid="34" x="546" y="225" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="13" name="coin" gid="34" x="481" y="289" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="14" name="coin" gid="34" x="768.5" y="319.667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="158" name="coin" gid="34" x="128.5" y="255.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="159" name="coin" gid="34" x="63.8333" y="256.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="160" name="coin" gid="34" x="128.5" y="289" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="161" name="coin" gid="34" x="800" y="160" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="162" name="coin" gid="34" x="961" y="63" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="163" name="coin" gid="34" x="1089" y="62" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="164" name="coin" gid="34" x="1281" y="96" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="165" name="coin" gid="34" x="1407.5" y="160.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="166" name="coin" gid="34" x="1407.5" y="192.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="167" name="coin" gid="34" x="1407.5" y="224" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="168" name="coin" gid="34" x="1407.5" y="255.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="169" name="coin" gid="34" x="1216" y="224" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="170" name="coin" gid="34" x="1248" y="223.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="171" name="coin" gid="34" x="1280" y="223.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="172" name="coin" gid="34" x="1312" y="223.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="173" name="coin" gid="34" x="1152" y="319.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="174" name="coin" gid="34" x="1184" y="319.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="175" name="coin" gid="34" x="1248" y="319.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="176" name="coin" gid="34" x="1216" y="319.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="177" name="coin" gid="34" x="127" y="767.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="178" name="coin" gid="34" x="159" y="767.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="179" name="coin" gid="34" x="223" y="767.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="180" name="coin" gid="34" x="191" y="767.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="181" name="coin" gid="34" x="383.5" y="736.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="182" name="coin" gid="34" x="415.5" y="735.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="183" name="coin" gid="34" x="479.5" y="735.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="184" name="coin" gid="34" x="447.5" y="735.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="185" name="coin" gid="34" x="703.5" y="735.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="186" name="coin" gid="34" x="735.5" y="735.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="187" name="coin" gid="34" x="799.5" y="735.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="188" name="coin" gid="34" x="767.5" y="735.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="189" name="coin" gid="34" x="864" y="575.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="190" name="coin" gid="34" x="896" y="575.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="191" name="coin" gid="34" x="960" y="575.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="192" name="coin" gid="34" x="928" y="575.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="193" name="coin" gid="34" x="864.167" y="543.583" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="194" name="coin" gid="34" x="896.167" y="543.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="195" name="coin" gid="34" x="960.167" y="543.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="196" name="coin" gid="34" x="928.167" y="543.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="197" name="coin" gid="34" x="864.167" y="511.583" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="198" name="coin" gid="34" x="896.167" y="511.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="199" name="coin" gid="34" x="960.167" y="511.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="200" name="coin" gid="34" x="928.167" y="511.083" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="201" name="coin" gid="34" x="1472" y="415.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="202" name="coin" gid="34" x="1504" y="351" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="203" name="coin" gid="34" x="1568.5" y="288" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="204" name="coin" gid="34" x="1568.5" y="320.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="205" name="coin" gid="34" x="1568" y="352.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="206" name="coin" gid="34" x="1695.5" y="191" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="207" name="coin" gid="34" x="1760" y="255.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="208" name="coin" gid="34" x="1823.5" y="319" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="209" name="coin" gid="34" x="1888" y="383.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="210" name="coin" gid="34" x="1951.5" y="384" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="212" name="coin" gid="34" x="1920" y="319.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="213" name="coin" gid="34" x="1919.5" y="224" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="214" name="coin" gid="34" x="1632.5" y="511.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="215" name="coin" gid="34" x="1727.5" y="512" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="216" name="coin" gid="34" x="1760.5" y="512" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="217" name="coin" gid="34" x="1632" y="447.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="218" name="coin" gid="34" x="1727" y="447.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="220" name="coin" gid="34" x="1760" y="447.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="221" name="coin" gid="34" x="1632.5" y="384" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="222" name="coin" gid="34" x="1696" y="384" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="223" name="coin" gid="34" x="1759.5" y="384" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="224" name="coin" gid="34" x="1152.5" y="543.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="225" name="coin" gid="34" x="1184" y="544" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="226" name="coin" gid="34" x="1216.5" y="543.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="227" name="coin" gid="34" x="1248.5" y="543.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="228" name="coin" gid="34" x="1280.5" y="543.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="229" name="coin" gid="34" x="1279.5" y="480.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="230" name="coin" gid="34" x="1407.5" y="607" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="231" name="coin" gid="34" x="1407.5" y="640" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="232" name="coin" gid="34" x="1408" y="672" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="233" name="coin" gid="34" x="1408.25" y="704.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="234" name="coin" gid="34" x="1408.75" y="769.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="235" name="coin" gid="34" x="1408.25" y="737.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="236" name="coin" gid="34" x="1599.75" y="672" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="237" name="coin" gid="34" x="1600.25" y="737" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="238" name="coin" gid="34" x="1599.75" y="705" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="239" name="coin" gid="34" x="1823.75" y="671.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="240" name="coin" gid="34" x="1823.25" y="736.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="241" name="coin" gid="34" x="1823.75" y="704.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="242" name="coin" gid="34" x="927.75" y="287.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="243" name="coin" gid="34" x="928.25" y="352.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="244" name="coin" gid="34" x="927.75" y="320.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="245" name="coin" gid="34" x="1024" y="320" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="246" name="coin" gid="34" x="352.5" y="544" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="247" name="coin" gid="34" x="415.5" y="512" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="248" name="coin" gid="34" x="512" y="447.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="249" name="coin" gid="34" x="544" y="447.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="250" name="coin" gid="34" x="576" y="448" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="251" name="coin" gid="34" x="512" y="479.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="252" name="coin" gid="34" x="544" y="479.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="253" name="coin" gid="34" x="576" y="480.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="254" name="coin" gid="34" x="-1" y="350.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="255" name="coin" gid="34" x="31" y="350.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="256" name="coin" gid="34" x="63" y="351.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="257" name="coin" gid="34" x="96.5" y="255.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="258" name="coin" gid="34" x="0" y="511" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="259" name="coin" gid="34" x="32" y="511.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="260" name="coin" gid="34" x="63.5" y="511.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="261" name="coin" gid="34" x="96" y="512" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="262" name="coin" gid="34" x="0" y="608.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="263" name="coin" gid="34" x="32.5" y="608" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="264" name="coin" gid="34" x="65" y="608" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="265" name="coin" gid="34" x="128" y="704" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="266" name="coin" gid="34" x="256" y="703.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="267" name="coin" gid="34" x="160" y="704.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="268" name="coin" gid="34" x="224" y="703.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="269" name="coin" gid="34" x="192" y="703.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="270" name="coin" gid="34" x="1024" y="671.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="271" name="coin" gid="34" x="928" y="671.75" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="272" name="coin" gid="34" x="992" y="671.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="273" name="coin" gid="34" x="960" y="671.25" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="278" name="coin" gid="34" x="863.5" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="279" name="coin" gid="34" x="959.5" y="831.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="280" name="coin" gid="34" x="1055" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="281" name="coin" gid="34" x="1088" y="800" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="282" name="coin" gid="34" x="1215.5" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="283" name="coin" gid="34" x="1345" y="798" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="284" name="coin" gid="34" x="1537" y="800" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="285" name="coin" gid="34" x="1632" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="286" name="coin" gid="34" x="1791.5" y="831.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="287" name="coin" gid="34" x="1760" y="831.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="288" name="coin" gid="34" x="1760" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="289" name="coin" gid="34" x="1792" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="290" name="coin" gid="34" x="1919" y="799" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="291" name="coin" gid="34" x="1888.5" y="799.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="292" name="coin" gid="34" x="1888" y="670.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="293" name="coin" gid="34" x="1920" y="670.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="294" name="coin" gid="34" x="1888" y="543" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="295" name="coin" gid="34" x="1920" y="543" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="299" name="coin" gid="34" x="1569" y="799.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="310" name="coin" gid="34" x="288.333" y="415.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="311" name="coin" gid="34" x="223.667" y="416.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="312" name="coin" gid="34" x="256.333" y="415.5" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="313" name="coin" gid="34" x="351.333" y="351.333" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="314" name="coin" gid="34" x="383.333" y="352" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="315" name="coin" gid="34" x="415.333" y="352" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="316" name="coin" gid="34" x="447.333" y="351.333" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="330" name="coin" gid="34" x="1760" y="62.6667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="331" name="coin" gid="34" x="1792" y="62.6667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="332" name="coin" gid="34" x="1824.67" y="62.6667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="333" name="coin" gid="34" x="1920.67" y="63.3333" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="334" name="coin" gid="34" x="1887.33" y="62.6667" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="335" name="coin" gid="34" x="1857.33" y="62.6667" width="32" height="32">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="water" offsetx="78" offsety="-20">
+  <object id="49" name="water" gid="35" x="64" y="896" width="32" height="32"/>
+  <object id="50" name="water" gid="35" x="96.5" y="896.5" width="32" height="32"/>
+  <object id="51" name="water" gid="35" x="127.5" y="896.5" width="32" height="32"/>
+  <object id="52" name="water" gid="35" x="64" y="864" width="32" height="32"/>
+  <object id="53" name="water" gid="35" x="96.5" y="864" width="32" height="32"/>
+  <object id="54" name="water" gid="35" x="128" y="864" width="32" height="32"/>
+  <object id="58" name="water" gid="35" x="224" y="896" width="32" height="32"/>
+  <object id="59" name="water" gid="35" x="256.5" y="896" width="32" height="32"/>
+  <object id="60" name="water" gid="35" x="288" y="896" width="32" height="32"/>
+  <object id="61" name="water" gid="35" x="320.5" y="896" width="32" height="32"/>
+  <object id="62" name="water" gid="35" x="353" y="896" width="32" height="32"/>
+  <object id="63" name="water" gid="35" x="384.5" y="896" width="32" height="32"/>
+  <object id="64" name="water" gid="35" x="416.5" y="896" width="32" height="32"/>
+  <object id="65" name="water" gid="35" x="320.75" y="863.5" width="32" height="32"/>
+  <object id="66" name="water" gid="35" x="384.75" y="863.5" width="32" height="32"/>
+  <object id="67" name="water" gid="35" x="353.25" y="863.5" width="32" height="32"/>
+  <object id="68" name="water" gid="35" x="416.75" y="863.5" width="32" height="32"/>
+  <object id="69" name="water" gid="35" x="256.75" y="863.5" width="32" height="32"/>
+  <object id="70" name="water" gid="35" x="288.25" y="863.5" width="32" height="32"/>
+  <object id="71" name="water" gid="35" x="224.25" y="863.5" width="32" height="32"/>
+  <object id="72" name="water" gid="35" x="319.75" y="831.5" width="32" height="32"/>
+  <object id="73" name="water" gid="35" x="383.75" y="831.5" width="32" height="32"/>
+  <object id="74" name="water" gid="35" x="352.25" y="831.5" width="32" height="32"/>
+  <object id="75" name="water" gid="35" x="415.75" y="831.5" width="32" height="32"/>
+  <object id="76" name="water" gid="35" x="255.75" y="831.5" width="32" height="32"/>
+  <object id="77" name="water" gid="35" x="287.25" y="831.5" width="32" height="32"/>
+  <object id="78" name="water" gid="35" x="223.25" y="831.5" width="32" height="32"/>
+  <object id="79" name="water" gid="35" x="544.25" y="896" width="32" height="32"/>
+  <object id="80" name="water" gid="35" x="608.25" y="896" width="32" height="32"/>
+  <object id="81" name="water" gid="35" x="576.75" y="896" width="32" height="32"/>
+  <object id="82" name="water" gid="35" x="640.25" y="896" width="32" height="32"/>
+  <object id="84" name="water" gid="35" x="511.75" y="896" width="32" height="32"/>
+  <object id="86" name="water" gid="35" x="511.25" y="864" width="32" height="32"/>
+  <object id="87" name="water" gid="35" x="576.25" y="864" width="32" height="32"/>
+  <object id="88" name="water" gid="35" x="607.75" y="864" width="32" height="32"/>
+  <object id="89" name="water" gid="35" x="543.75" y="864" width="32" height="32"/>
+  <object id="90" name="water" gid="35" x="639.75" y="864" width="32" height="32"/>
+  <object id="91" name="water" gid="35" x="512.25" y="832" width="32" height="32"/>
+  <object id="92" name="water" gid="35" x="577.25" y="832" width="32" height="32"/>
+  <object id="93" name="water" gid="35" x="608.75" y="832" width="32" height="32"/>
+  <object id="94" name="water" gid="35" x="544.75" y="832" width="32" height="32"/>
+  <object id="95" name="water" gid="35" x="640.75" y="832" width="32" height="32"/>
+  <object id="97" name="water" gid="35" x="768.75" y="895.5" width="32" height="32"/>
+  <object id="98" name="water" gid="35" x="800.25" y="895.5" width="32" height="32"/>
+  <object id="99" name="water" gid="35" x="736.25" y="895.5" width="32" height="32"/>
+  <object id="100" name="water" gid="35" x="832.25" y="895.5" width="32" height="32"/>
+  <object id="101" name="water" gid="35" x="799.5" y="864" width="32" height="32"/>
+  <object id="102" name="water" gid="35" x="768" y="864" width="32" height="32"/>
+  <object id="103" name="water" gid="35" x="831.5" y="864" width="32" height="32"/>
+  <object id="104" name="water" gid="35" x="735.5" y="864" width="32" height="32"/>
+  <object id="106" name="water" gid="35" x="928" y="896" width="32" height="32"/>
+  <object id="108" name="water" gid="35" x="895.5" y="896" width="32" height="32"/>
+  <object id="109" name="water" gid="35" x="895.25" y="863" width="32" height="32"/>
+  <object id="110" name="water" gid="35" x="927.75" y="863" width="32" height="32"/>
+  <object id="115" name="water" gid="35" x="991.375" y="897" width="32" height="32"/>
+  <object id="116" name="water" gid="35" x="1023.88" y="897" width="32" height="32"/>
+  <object id="117" name="water" gid="35" x="991.125" y="864" width="32" height="32"/>
+  <object id="118" name="water" gid="35" x="1023.62" y="864" width="32" height="32"/>
+  <object id="123" name="water" gid="35" x="1087.88" y="896.5" width="32" height="32"/>
+  <object id="124" name="water" gid="35" x="1120.38" y="896.5" width="32" height="32"/>
+  <object id="125" name="water" gid="35" x="1087.62" y="863.5" width="32" height="32"/>
+  <object id="126" name="water" gid="35" x="1120.12" y="863.5" width="32" height="32"/>
+  <object id="127" name="water" gid="35" x="1152.13" y="896" width="32" height="32"/>
+  <object id="128" name="water" gid="35" x="1151.87" y="863" width="32" height="32"/>
+  <object id="129" name="water" gid="35" x="1249.13" y="897.5" width="32" height="32"/>
+  <object id="130" name="water" gid="35" x="1248.87" y="864.5" width="32" height="32"/>
+  <object id="131" name="water" gid="35" x="1376.13" y="896.5" width="32" height="32"/>
+  <object id="132" name="water" gid="35" x="1375.87" y="863.5" width="32" height="32"/>
+  <object id="133" name="water" gid="35" x="1408.13" y="896.5" width="32" height="32"/>
+  <object id="134" name="water" gid="35" x="1407.87" y="863.5" width="32" height="32"/>
+  <object id="135" name="water" gid="35" x="1441.13" y="896.5" width="32" height="32"/>
+  <object id="136" name="water" gid="35" x="1440.87" y="863.5" width="32" height="32"/>
+  <object id="137" name="water" gid="35" x="1568.63" y="897" width="32" height="32"/>
+  <object id="138" name="water" gid="35" x="1601.63" y="897" width="32" height="32"/>
+  <object id="139" name="water" gid="35" x="1536.63" y="897" width="32" height="32"/>
+  <object id="140" name="water" gid="35" x="1536.37" y="864" width="32" height="32"/>
+  <object id="141" name="water" gid="35" x="1568.37" y="864" width="32" height="32"/>
+  <object id="142" name="water" gid="35" x="1601.37" y="864" width="32" height="32"/>
+  <object id="146" name="water" gid="35" x="1633.32" y="897.25" width="32" height="32"/>
+  <object id="148" name="water" gid="35" x="1633.06" y="864.25" width="32" height="32"/>
+  <object id="149" name="water" gid="35" x="1728.32" y="896.75" width="32" height="32"/>
+  <object id="151" name="water" gid="35" x="1728.06" y="863.75" width="32" height="32"/>
+  <object id="152" name="water" gid="35" x="1856.87" y="863.5" width="32" height="32"/>
+  <object id="153" name="water" gid="35" x="1857.13" y="896.5" width="32" height="32"/>
+  <object id="156" name="water" gid="35" x="1888.37" y="864" width="32" height="32"/>
+  <object id="296" name="water" gid="35" x="1184.5" y="863.5" width="32" height="32"/>
+  <object id="297" name="water" gid="35" x="1280" y="863.5" width="32" height="32"/>
+  <object id="298" name="water" gid="35" x="1312" y="864.5" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="firewall" offsetx="77.5" offsety="-19.5">
+  <object id="300" name="firewall" gid="36" x="128" y="32.3333" width="32" height="32"/>
+  <object id="302" name="firewall" gid="36" x="192.333" y="32" width="32" height="32"/>
+  <object id="304" name="firewall" gid="36" x="160" y="32" width="32" height="32"/>
+  <object id="305" name="firewall" gid="36" x="224.333" y="32" width="32" height="32"/>
+  <object id="308" name="firewall" gid="36" x="319.5" y="223.833" width="32" height="32"/>
+  <object id="309" name="firewall" gid="36" x="351.5" y="223.833" width="32" height="32"/>
+  <object id="317" name="firewall" gid="36" x="224" y="481.333" width="32" height="32"/>
+  <object id="318" name="firewall" gid="36" x="256" y="481.333" width="32" height="32"/>
+  <object id="319" name="firewall" gid="36" x="768.667" y="512" width="32" height="32"/>
+  <object id="320" name="firewall" gid="36" x="768.667" y="544.667" width="32" height="32"/>
+  <object id="321" name="firewall" gid="36" x="1248" y="703.667" width="32" height="32"/>
+  <object id="322" name="firewall" gid="36" x="1248" y="671" width="32" height="32"/>
+  <object id="323" name="firewall" gid="36" x="1536.67" y="447.667" width="32" height="32"/>
+  <object id="324" name="firewall" gid="36" x="1536.67" y="415" width="32" height="32"/>
+  <object id="325" name="firewall" gid="36" x="1759.33" y="608.334" width="32" height="32"/>
+  <object id="326" name="firewall" gid="36" x="1759.33" y="575.667" width="32" height="32"/>
+  <object id="327" name="firewall" gid="36" x="1824.67" y="161" width="32" height="32"/>
+  <object id="328" name="firewall" gid="36" x="1824.67" y="128.333" width="32" height="32"/>
+  <object id="336" name="firewall" gid="36" x="1856" y="160.334" width="32" height="32"/>
+  <object id="337" name="firewall" gid="36" x="1856" y="127.667" width="32" height="32"/>
+  <object id="338" name="firewall" gid="36" x="1600" y="63.6668" width="32" height="32"/>
+  <object id="339" name="firewall" gid="36" x="1600" y="30.9998" width="32" height="32"/>
+  <object id="340" name="firewall" gid="36" x="1632" y="64.3335" width="32" height="32"/>
+  <object id="341" name="firewall" gid="36" x="1632" y="31.6665" width="32" height="32"/>
+  <object id="342" name="firewall" gid="36" x="1568" y="64.3335" width="32" height="32"/>
+  <object id="343" name="firewall" gid="36" x="1568" y="31.6665" width="32" height="32"/>
+  <object id="344" name="firewall" gid="36" x="1024" y="511.667" width="32" height="32"/>
+  <object id="345" name="firewall" gid="36" x="1024" y="479" width="32" height="32"/>
+  <object id="346" name="firewall" gid="36" x="831.333" y="256.334" width="32" height="32"/>
+  <object id="347" name="firewall" gid="36" x="831.333" y="223.667" width="32" height="32"/>
+  <object id="348" name="firewall" gid="36" x="864" y="255.667" width="32" height="32"/>
+  <object id="349" name="firewall" gid="36" x="864" y="223" width="32" height="32"/>
+  <object id="350" name="firewall" gid="36" x="352.667" y="609.667" width="32" height="32"/>
+  <object id="351" name="firewall" gid="36" x="352.667" y="577" width="32" height="32"/>
+  <object id="352" name="firewall" gid="36" x="448.667" y="639" width="32" height="32"/>
+  <object id="353" name="firewall" gid="36" x="448.667" y="606.333" width="32" height="32"/>
+  <object id="354" name="firewall" gid="36" x="544.667" y="640.333" width="32" height="32"/>
+  <object id="355" name="firewall" gid="36" x="544.667" y="607.666" width="32" height="32"/>
+  <object id="356" name="firewall" gid="36" x="608.667" y="641" width="32" height="32"/>
+  <object id="357" name="firewall" gid="36" x="608.667" y="608.333" width="32" height="32"/>
+  <object id="358" name="firewall" gid="36" x="608" y="576.333" width="32" height="32"/>
+  <object id="359" name="firewall" gid="36" x="640" y="608.333" width="32" height="32"/>
+  <object id="360" name="firewall" gid="36" x="640" y="576" width="32" height="32"/>
+  <object id="361" name="firewall" gid="36" x="1120.67" y="735.333" width="32" height="32"/>
+  <object id="362" name="firewall" gid="36" x="1152" y="703.333" width="32" height="32"/>
+  <object id="363" name="firewall" gid="36" x="1119.33" y="704.667" width="32" height="32"/>
+ </objectgroup>
+</map>
